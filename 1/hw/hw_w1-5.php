@@ -14,6 +14,7 @@ $mytext='I love php';
 ?>
 <p style="font-size:<?php echo $mynumber ?>;color:<?php echo $mycolor; ?>; ">
 <?php echo $mytext ?>
-</p>   
+</p>  
+<!-- 123  -->
 </body>
 </html>
