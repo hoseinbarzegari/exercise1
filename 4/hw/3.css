@@ -1,0 +1,30 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+header{
+
+    height: 700px;
+    background-image: url(header.jpg);
+    background-size: cover;
+}
+
+
+#header-header{
+    display: flex;
+}
+div #signin a{
+   color:white;  
+}
+div #signup a{
+    color:rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    bo  
+ }

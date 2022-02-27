@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #444;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .container {
+        margin: auto;
+        width: 75%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        border-radius: 5px;
+      }
+
+      form {
+        padding: 40px 50px;
+      }
+
+      .input-row {
+        padding-bottom: 20px;
+      }
+
+      input {
+        display: block;
+        width: 100%;
+        height: 30px;
+        margin-top: 5px;
+      }
+      select {
+        display: block;
+        width: 100%;
+        height: 40px;
+        margin: 5px 0;
+      }
+      label {
+        color: #555;
+        font-size: 14px;
+        margin: 10px 0;
+      }
+      .input-container {
+        display: inline-block;
+        width: 32%;
+        box-sizing: border-box;
+      }
+      .fullname,
+      .phone {
+        padding-right: 20px;
+      }
+      .input-container2 {
+        display: inline-block;
+        width: 49%;
+        box-sizing: border-box;
+      }
+      .lorem1 {
+        padding-right: 20px;
+      }
+      button#submit,
+      #clear {
+        margin: 100px 100px;
+        display: block;
+        width: 200px;
+        margin: auto;
+      }
+      .input-container3 {
+        display: inline-block;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      textarea {
+        resize: none;
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 5px 0;
+        font-style: italic;
+        padding: 10px;
+      }
+      button {
+        color: whitesmoke;
+        background-color: palevioletred;
+        border: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100px;
+        margin: 20px auto;
+        border-radius: 2px;
+        padding: 5px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title">
+      <h1>CONTACT US</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+        nesciunt.
+      </p>
+    </div>
+    <div class="container">
+      <form action="">
+        <div class="input-row">
+          <div class="input-container fullname">
+            <label for="fullname">FULL NAME</label>
+            <input type="text" name="fullname" id="fullname" />
+          </div>
+          <div class="input-container phone">
+            <label for="phone">PHONE</label>
+            <input type="tel" name="phone" id="phone" />
+          </div>
+          <div class="input-container email">
+            <label for="email">EMAIL</label>
+            <input type="email" name="fullname" id="email" />
+          </div>
+        </div>
+        <div class="input-row">
+          <div class="input-container2 lorem1">
+            <label for="lorem1">Lorem, ipsum.</label>
+            <select name="lorem1" id="">
+              <option value="">Please Select...</option>
+            </select>
+          </div>
+          <div class="input-container2 lorem2">
+            <label for="lorem1">Lorem, ipsum.</label>
+            <select name="lorem1" id="">
+              <option value="">Please Select...</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-row">
+          <div class="input-container3">
+            <label for="lorem1">Message</label>
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit. At, odit."
+            ></textarea>
+          </div>
+        </div>
+      </form>
+    </div>
+    <button>SUBMIT</button>
+  </body>
+</html>

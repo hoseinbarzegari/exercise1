@@ -1,0 +1,72 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 11fr ;
+    grid-template-areas: 
+    ' oran oran oran oran'
+    'gree gree gree Bluis'
+    'gree gree gree blu';
+    grid-template-rows: 1fr 3.5fr 1fr ;    
+    padding: 2px;
+    color: white;
+    font-size: large;
+    font-family:sans-serif;
+    
+}
+.flex1 {grid-area: oran;
+    background-color: rgb(226, 36, 11);
+}
+.flex2 {grid-area: gree;
+    background-color: rgb(140, 241, 8);
+    flex-direction: column;
+}
+.flex3 {grid-area: Bluis;
+    background-color: rgb(63, 141, 109);
+}
+.flex4 {grid-area: blu;
+    background-color: rgb(24, 203, 209);
+}
+.flex1 ,.flex2 ,.flex3 ,.flex4{
+    display: flex;
+    margin: 3px;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+}
+.orangcolor{
+    background-color: rgb(241, 85, 13);
+    margin: 2px;
+    padding: 5px;
+}
+#logo{
+    width: 14%;
+    text-align: center;
+}
+#navigation{
+    width: 84%;
+}
+.greencolor{
+    background-color: rgb(55, 107, 55);
+    width: 100%;
+    text-align: center;
+    height: 33%;
+    padding-top: 10px;
+}
+.greenbluecolor{
+    background: rgb(53, 197, 185);
+    width: 33%;
+    margin: 5px;
+    height: 90%;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.bluecolor{
+    background: rgb(20, 8, 124);
+    padding: 5px;
+}
+#logo2{
+    width: 25%;
+    text-align: center;
+}
+#prog{
+    width: 75%;
+}

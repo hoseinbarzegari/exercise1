@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1,#div2,#div3,#div4,#div5{
+            display: inline-block;
+        }
+        label{
+            display: block
+        }
+        body{
+            text-transform:capitalize ;
+            width: 600px ;
+            margin: auto ;
+            text-align: center;
+            font-family: sans-serif;
+        }
+        #div4,#div5{
+            width: 49%;
+        }
+        #submit{
+            background-color: purple;
+            border-radius: 5px;
+        }
+        form{
+            border: 1px,solid,black ;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <h1>contact us</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem dolore aperiam similique unde perspiciatis .</p>
+    <form action="#">
+        <div id="div1">
+        <label for="full name">full name</label>
+        <input type="text" name="full name"></div>
+        <div id="div2">
+        <label for="full name">phone</label>
+        <input type="number" name="phone"></div>
+        <div id="div3">
+        <label for="full name">email</label>
+        <input type="email" name="email"></div><br><br>
+        <div id="div4"><label for="lorem ipsum">lorem ipsum</label>
+        <select name="lorem ipsum" id="lorem">
+            <option value="please select">please select</option>
+            <option value="lorem2">lorem2</option>
+            <option value="lorem1">lorem1</option>
+        </select></div>
+        <div id="div5"><label  for="ipsum lorem">ipsum lorem</label>
+        <select name="ipsum lorem" id="ipsum">
+            <option value="please select">please select</option>
+            <option value="lorem2">lorem2</option>
+            <option value="lorem1">lorem1</option>
+        </select></div><br><br>
+        <label for="massage">massage</label>
+        <textarea name="massage" id="" cols="50" rows="10"></textarea>
+        <br><input id="submit" type="submit">
+    </form>
+</body>
+</html>

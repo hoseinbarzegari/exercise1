@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: linear-gradient(90deg, #2843b8 10%, #1776c6 100%);
+      }
+
+      .container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 50%;
+        height: 300px;
+        margin: auto;
+        background-color: azure;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+          rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+      }
+      .image-container {
+        position: absolute;
+        bottom: 75%;
+      }
+      img {
+        position: relative;
+        right: 50%;
+        width: 9em;
+        box-sizing: content-box;
+        border: double 4px transparent;
+        border-radius: 80px;
+        background-image: linear-gradient(white, white),
+          radial-gradient(circle at top left, #fdd819, #e80505);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        border-radius: 50%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+          rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+      }
+
+      .text-container {
+        display: table;
+        position: absolute;
+        width: 70%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+
+      .date {
+        color: #777;
+      }
+
+      .title {
+        font-weight: bolder;
+        font-size: 20px;
+      }
+
+      .describe {
+        columns: #444;
+      }
+
+      button {
+        color: white;
+        background-image: linear-gradient(135deg, #fdd819 10%, #e80505 100%);
+        border: 0;
+        padding: 10px 20px;
+        border-radius: 50px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+          rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-container">
+        <img src="https://picsum.photos/200" alt="" />
+      </div>
+      <div class="text-container">
+        <p class="date">12 January 2019</p>
+        <p class="title">CSS Positioning</p>
+        <p class="describe">
+          The position property specify the type of positioning method used for
+          an element (static, relative, absolute, fixed, or sticky)
+        </p>
+        <button>Read More</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'Samim';
+            src: url('Samim-FD.eot');
+            src: url('Samim-FD.eot?#iefix') format('embedded-opentype'),
+                url('Samim-FD.woff2') format('woff2'),
+                url('Samim-FD.woff') format('woff'),
+                url('Samim-FD.ttf') format('truetype');
+            font-weight: normal;
+        }
+
+        body , input{
+            font-family: samim, tahoma;
+            color:grey;
+        }
+        .container{
+            width:700px; 
+            height:500px;
+            
+            margin:auto;
+            text-align:right;
+        
+        }
+        label{
+            display:block;
+        }
+        input{
+            border: 1px solid lightgrey;
+            border-radius: 5px;
+            height:40px;
+        }
+        .red{
+            color:red;
+            display:inline;
+        }
+        .input-group-inline-block{
+            display: inline-block;
+            margin-left: 50px;
+        }
+        .input-group-middle-space{
+            width: 38%;
+            margin-left: 100px;
+            display: inline-block;
+        }
+        .input-group-middle-space > input{
+            width: 100%;
+            
+
+        }
+        .input-group-full-space, .input-group-full-space  input{
+            width:100%;
+        }
+        .radio{
+            display: inline;
+            float: left;
+            height:auto;
+            
+        }
+        .vaziat_tahsili input,.vaziat_tahsili label , .vaziat_shoghli input , .vaziat_shoghli label{
+            display:inline;
+        }
+    </style>
+</head>
+<body dir="rtl">
+    <div class="container">
+        <div class="input-group-inline-block">
+            <label for="nam">نام<div class="red">*</div></label>
+            <input type="text" id="name" pattern="^[\u0600-\u06FF\s]+$" required="true" />
+        </div>
+
+        <div class="input-group-inline-block">
+            <label for="nam">نام خانوادگی<div class="red">*</div></label>
+            <input type="text" id="name" pattern="^[\u0600-\u06FF\s]+$" required="true" />
+        </div>
+
+        <div class="input-group-inline-block" style="margin-left:0px;">
+            <label for="nam">نام پدر<div class="red">*</div></label>
+            <input type="text" id="name" pattern="^[\u0600-\u06FF\s]+$" required="true" />
+        </div>
+        <br/>
+        <br/>
+
+        <div class="input-group-middle-space">
+            <label for="nam">شماره شناسنامه<div class="red">*</div></label>
+            <input type="text" id="name" pattern="(([1-9]{4})|([0]{1}[0]{1}[0-9]{8})|([1-9]{1}[0-9]{7})|(\+98\d{13,}))" required="true" />
+        </div>
+
+        <div class="input-group-middle-space" style="margin-left: 0px;">
+            <label for="nam">شماره ملی<div class="red">*</div></label>
+            <input type="text" id="name" required="true" />
+        </div>
+
+        <br>
+        <br>
+
+        <div class="input-group-middle-space vaziat_tahsili">
+            <label for="nam">وضعیت تحصیلی<div class="red">*</div></label>
+            
+
+            <div>
+                <label for=""><span>دانشجو کارشناسی</span></label>
+                <input class="radio" type="radio" name="vaziat_tahsil" value="karshenasi"  >
+            </div>
+            <div>
+                <label for=""><span >دانش آموخته کارشناسی</span></label>
+                <input class="radio" id="" type="radio" name="vaziat_tahsil" value="full-karshenasi"  >
+            </div>
+            <div>
+                <label for=""><span >دانشجو کارشناسی ارشد</span></label>
+                <input class="radio" id="" type="radio" name="vaziat_tahsil" value="karshenasi-arshad" >
+            </div>
+            <div>
+                <label for=""><span >دانش آموخته کارشناسی ارشد</span></label>
+                <input class="radio" id="" type="radio" name="vaziat_tahsil" value="full-karshenasi-arshad" >
+            </div>
+            <div>
+                <label for=""><span >دانشجو دکترا</span></label>
+                <input class="radio" id="" type="radio" name="vaziat_tahsil" value="doctora" >
+            </div>
+            <div>
+                <label for=""><span >دانش آموخته دکترا</span></label>
+                <input class="radio" id="" type="radio" name="vaziat_tahsil" value="full-doctora" >
+            </div>
+
+
+
+        </div>
+
+        <div class="input-group-middle-space vaziat_shoghli" style="margin-left: 0px;">
+            <label for="nam">شغل<div class="red">*</div></label>
+            
+            <div>
+                <label for=""><span>دانشجو</span></label>
+                <input class="radio" type="radio" name="vaziat_shoghli" >
+            </div>
+            <div>
+                <label for=""><span >دبیر</span></label>
+                <input class="radio" id="" type="radio" name="vaziat_shoghli"  >
+            </div>
+            <div>
+                <label for=""><span >استاد</span></label>
+                <input class="radio" id="" type="radio" name="vaziat_shoghli">
+            </div>
+            <div>
+                <label for=""><span >شاغل بخش دولتی</span></label>
+                <input class="radio" id="" type="radio" name="vaziat_shoghli" >
+            </div>
+            <div>
+                <label for=""><span >شاغل بخش خصوصی</span></label>
+                <input class="radio" id="" type="radio" name="vaziat_shoghli" >
+            </div>
+            <div>
+                <label for=""><span >بازنشسته</span></label>
+                <input class="radio" id="" type="radio" name="vaziat_shoghli">
+            </div>
+
+        </div>
+
+        <br>
+        <br>
+        <div class="input-group-middle-space">
+            <label for="nam">نشانی محل سکونت<div class="red">*</div></label>
+            <input type="text" id="name" required="true" />
+        </div>
+
+        <div class="input-group-middle-space" style="margin-left: 0px;">
+            <label for="nam">نشانی محل کار</label>
+            <input type="text" id="name" required="true" />
+        </div>
+        <br>
+        <br>
+        <div class="input-group-middle-space">
+            <label for="nam">تلفن همراه<div class="red">*</div></label>
+            <input type="text" id="name" pattern="(([1-9]{4})|([0]{1}[0]{1}[0-9]{8})|([1-9]{1}[0-9]{7})|(\+98\d{13,}))" required="true" />
+        </div>
+
+        <div class="input-group-middle-space" style="margin-left: 0px;">
+            <label for="nam">تلفن ثابت</label>
+            <input type="text" id="name" pattern="\d{11}" required="true" />
+        </div>
+
+        <br>
+        <br>
+
+        <div class="input-group-full-space" >
+            <label for="nam">نشانی پست الکترونیکی<div class="red">*</div></label>
+            <input type="text" id="name" required="true" />
+        </div>
+
+        <br>
+        <br>
+
+        <div class="input-group-middle-space" >
+            <label for="">
+                کد امنیتی
+                <span style="color:blue;">
+                    jecia24
+                </span>
+            </label>
+            <input type="text" required="true" />
+        </div>
+
+        <br>
+        <br>
+
+        <div>
+            <input type="submit" value="ثبت فرم" style="color:white; background-color:blue; padding:10px;">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-transform: capitalize;
+        }
+        #force{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>text form validation</h1>
+    <form action="#">
+        <label for="name">name <span id="force">*</span></label>
+        <input type="text" name="name"  oninvalid="this.setCustomValidity('Please Enter your name')"
+         required> <br>
+        <label for="address">address <span id="force">*</span></label>
+        <input type="text" name="address"><br>
+        <label for="zip code">zip code <span id="force">*</span>
+        <input type="text" name="zip code" required><br>
+        <label for="country">country<span id="force">*</span></label>
+        <select name="country" id="country">
+            <option value="iran">iran </option>
+            <option value="italia">italia </option>
+            <option value="iraq">iraq </option>
+            <option value="qatar">qatar</option>
+            <option value="india">india</option>
+        </select> <br>
+        <label for="gender">gender<span id="force">*</span></label>
+        <input type="radio" name="gender" value="male">male 
+        <input type="radio" name="gender" value="female">female 
+
+        <label for="preferences"></label>
+
+        
+        <br><br>
+        <input type="submit" value="Submit">
+        
+    </form>
+</body>
+</html>
